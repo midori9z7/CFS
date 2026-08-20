@@ -1,4 +1,4 @@
-# C Noob Level
+# C Level 1
 
 > From "I know nothing" to "I can write a calculator."
 > This level assumes zero programming experience. Every lesson is one small,
@@ -950,7 +950,7 @@ Goodbye!
 
 ### Project H — shunting-yard calculator (`projects/shunting_calc.c`)
 
-The boss fight of the noob level. It reads a full expression like
+The boss fight of Level 1. It reads a full expression like
 `(1 + 2) * 3 ^ 2` or `2 ^ 3 ^ 2` and evaluates it using the
 *shunting-yard algorithm* — a clever way to handle operator precedence
 and parentheses with two stacks.
@@ -981,7 +981,7 @@ means `2 ^ (3 ^ 2)` = 512. The program also understands unary minus,
 so `-5 + 3` and `2 * -3` work.
 
 If you can explain to a friend how this program works, you have
-officially finished the noob level.
+officially finished Level 1.
 
 ---
 
@@ -991,15 +991,15 @@ officially finished the noob level.
 folder:
 
 ```text
-powershell -ExecutionPolicy Bypass -File .\noob-level\build.ps1
+powershell -ExecutionPolicy Bypass -File .\level-1\build.ps1
 ```
 
-Afterwards the programs live in `noob-level\bin\`:
+Afterwards the programs live in `level-1\bin\`:
 
 ```text
-noob-level\bin\01_hello_world.exe
-noob-level\bin\addition.exe
-noob-level\bin\basic_calculator.exe
+level-1\bin\01_hello_world.exe
+level-1\bin\addition.exe
+level-1\bin\basic_calculator.exe
 ...
 ```
 
@@ -1041,7 +1041,7 @@ command. Compiling from source is the normal C workflow.
 
 ## 5. Coming From the Fortran Repo (FFS)?
 
-The CFS noob level mirrors FFS, but the two languages have some famous
+CFS Level 1 mirrors FFS Level 1, but the two languages have some famous
 differences — know them and you will not be caught off guard:
 
 | Fortran (FFS) | C (CFS) | Note |
@@ -1068,13 +1068,13 @@ functions and strings. Natural next steps:
   the reason `scanf` needs the `&`
 - `struct` — your own data shapes
 - dynamic memory with `malloc` / `free`
-- bigger projects — like the screensaver experiments in `projects/`
-  at the repository root
+- bigger projects — like the screensaver experiments now living in the
+  [screensavers repo](../../screensavers/) at `Documents\screensavers`
 
 But first: go play with the guessing game. Add a difficulty setting.
 Limit the guesses. Print the secret number at the end. Break something,
 then fix it. That is the whole secret of learning to program.
 
-> **Next level ready:** when you are done, move up to the
-> [beginner-level](../beginner-level/README.md) — pointers, structs,
+> **Next level ready:** when you are done, move up to
+> [Level 2](../level-2/README.md) — pointers, structs,
 > dynamic memory, files and recursion.

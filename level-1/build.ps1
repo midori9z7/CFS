@@ -1,8 +1,8 @@
 # build.ps1
-# Compiles every C program in noob-level into the bin/ folder.
+# Compiles every C program in level-1 into the bin/ folder.
 #
 # Usage (from the repository root):
-#     powershell -ExecutionPolicy Bypass -File .\noob-level\build.ps1
+#     powershell -ExecutionPolicy Bypass -File .\level-1\build.ps1
 #
 # Requires gcc to be on your PATH. Check with:  gcc --version
 

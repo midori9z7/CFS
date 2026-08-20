@@ -22,7 +22,7 @@ struct Account {
 /* read a whole number; returns 1 on success, 0 on garbage.
  * Garbage input would otherwise leave the variable unchanged and
  * the menu would loop forever -- checking scanf's return value
- * (first seen in the noob-level guessing game) fixes that. */
+ * (first seen in the Level 1 guessing game) fixes that. */
 int ask_int(int *value)
 {
     if (scanf("%d", value) != 1) {

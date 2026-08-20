@@ -1,5 +1,5 @@
 /* text_adventure.c
- * The boss fight of the beginner level: a tiny dungeon crawler.
+ * The boss fight of Level 2: a tiny dungeon crawler.
  *
  * The world is a set of rooms. Each room is a STRUCT that knows its
  * exits, and every exit is a POINTER to another room. Moving is

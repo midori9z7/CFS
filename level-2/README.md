@@ -1,7 +1,7 @@
-# C Beginner Level
+# C Level 2
 
 > From "I can write a calculator" to "I can build a tiny dungeon."
-> You finished the noob level, so you know variables, loops, arrays,
+> You finished Level 1, so you know variables, loops, arrays,
 > functions and strings. Now come the ideas that make C what it is:
 > **pointers** (addresses of memory), **structs** (your own types),
 > **dynamic memory** (size decided at run time), **files** (data that
@@ -13,7 +13,7 @@
 
 ## 0. Setup
 
-If you finished the noob level you already have everything: `gcc`, and
+If you finished Level 1 you already have everything: `gcc`, and
 the habit of compiling with warnings on.
 
 ```text
@@ -21,7 +21,7 @@ gcc 01_pointers.c -o pointers -Wall -Wextra
 ./pointers
 ```
 
-Two small differences from the noob level:
+Two small differences from Level 1:
 
 1. Some programs take **command-line arguments** — extra words after
    the program name. `main` receives them as `argc` (how many) and
@@ -90,7 +90,7 @@ int main(void)
   `printf`.
 - **This is why `scanf` needs `&x`**: `scanf` is a function, and a
   function can only change a caller's variable through a pointer. You
-  have been using pointers since the noob level without knowing it!
+  have been using pointers since Level 1 without knowing it!
 
 **Exercise:** declare a `double` and a `char`, point at them, print
 their values through the pointers, then change them through the
@@ -534,7 +534,7 @@ int main(void)
 
 **Exercise:** copy this program and make it *append* three more lines
 to the file instead of truncating. Write the multiplication table
-(noob-level Project D) into a file instead of the screen.
+(Level 1, Project D) into a file instead of the screen.
 
 ### Lesson 10 — Recursion
 
@@ -681,7 +681,7 @@ A menu-driven savings account: deposit, withdraw, check balance. One
 struct holds the data, `switch` picks the action, and a loop keeps the
 menu alive. Note the `ask_int`/`ask_double` helpers — they check
 scanf's return value so typing garbage cannot hang the menu (a lesson
-we learned the hard way in the noob-level guessing game).
+we learned the hard way in the Level 1 guessing game).
 
 ```c
 #include <stdio.h>
@@ -1210,7 +1210,7 @@ into struct fields, `const` parameters.
 
 ### Project H — text adventure (`projects/text_adventure.c`)
 
-The boss fight of the beginner level: a tiny dungeon crawler. The
+The boss fight of Level 2: a tiny dungeon crawler. The
 world is a set of rooms; each room is a **struct that knows its exits,
 and every exit is a pointer to another room**. Moving is just
 following a pointer: `current = current->to[i];` — your first graph.
@@ -1350,7 +1350,7 @@ YOU WIN! You escaped the dungeon.
 ```
 
 If you can explain to a friend how the rooms are connected, you have
-officially finished the beginner level.
+officially finished Level 2.
 
 **Lessons used:** 04, 05, 06, 08, 09. New: a tiny graph made of
 pointers.
@@ -1360,10 +1360,10 @@ pointers.
 ## 3. Build Everything
 
 `build.ps1` compiles every lesson and every project into the `bin/`
-folder — same script as the noob level:
+folder — same script as Level 1:
 
 ```text
-powershell -ExecutionPolicy Bypass -File .\beginner-level\build.ps1
+powershell -ExecutionPolicy Bypass -File .\level-2\build.ps1
 ```
 
 The compiled `.exe` files are not stored in git (see the repository
@@ -1407,8 +1407,9 @@ memory — plus files and recursion. The natural next steps:
 - **Function pointers** — storing a function's address in a variable
   (yes, functions have addresses too)
 - **`const` everywhere** — the discipline that keeps big programs sane
-- Reading the screensaver projects in `projects/` at the repository
-  root — with pointers and structs under your belt, they are no longer
+- Reading the screensaver projects in the
+  [screensavers repo](../../screensavers/) at `Documents\screensavers` —
+  with pointers and structs under your belt, they are no longer
   mysterious
 
 But first: go play with the dungeon. Add more rooms, add an inventory,

@@ -1,5 +1,5 @@
 /* shunting_calc.c
- * The boss fight of the noob level.
+ * The boss fight of Level 1.
  * It reads a full expression like "(1 + 2) * 3 ^ 2" and evaluates it
  * using the shunting-yard algorithm -- a clever way to handle operator
  * precedence and parentheses with two stacks.
@@ -23,7 +23,7 @@
  *   Goodbye!
  *
  * If you can explain to a friend how this program works, you have
- * officially finished the noob level.
+ * officially finished Level 1.
  *
  * Compile:
  *     gcc shunting_calc.c -o shunting_calc -lm
