@@ -5,7 +5,7 @@
 > runnable program. Read the lesson, run the program, change it, break it,
 > fix it. That last part is how you actually learn.
 
----s
+---
 
 ## 0. Setup
 
@@ -1074,3 +1074,7 @@ functions and strings. Natural next steps:
 But first: go play with the guessing game. Add a difficulty setting.
 Limit the guesses. Print the secret number at the end. Break something,
 then fix it. That is the whole secret of learning to program.
+
+> **Next level ready:** when you are done, move up to the
+> [beginner-level](../beginner-level/README.md) — pointers, structs,
+> dynamic memory, files and recursion.
