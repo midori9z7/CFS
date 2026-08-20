@@ -1,0 +1,9 @@
+# Compiled programs
+*.exe
+*.scr
+
+# Compiler intermediate files
+*.o
+
+# Build output
+bin/
